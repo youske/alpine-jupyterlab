@@ -11,4 +11,4 @@ RUN pip install jupyterlab && \
   jupyter serverextension enable --py jupyterlab
 
 EXPOSE 8888
-CMD ["jupyter","lab","--no-browser", "--ip=*","--port=8888","--notebook-dir=/workdir"]
+CMD ["gosu","admin","jupyter","lab","--no-browser", "--ip=*","--port=8888","--notebook-dir=/workdir"]
