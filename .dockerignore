@@ -1,8 +1,8 @@
 #
-.git*
-node_modules/
-vendor/
-tests/
+node_modules/*
+vendor/*
+tests/*
+.idea/*
 
 #
 .git*
@@ -12,9 +12,15 @@ tests/
 LICENSE*
 README*
 
-#
+[cCgGeE]tags
+[cCgGeE]TAGS
+.DS_Store
+._.DS_Store
+.apdisk
+Thumbs.db
 .tags
 *.swp
+*.lock
 *.lck
 *.*~
 *~
