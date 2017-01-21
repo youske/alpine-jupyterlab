@@ -10,5 +10,4 @@ LABEL com.geeplus.description="alpine jupyterlab image" \
 RUN pip install jupyterlab && \
   jupyter serverextension enable --py jupyterlab
 
-EXPOSE 8888
 CMD ["gosu","admin","jupyter","lab","--no-browser", "--ip=*","--port=8888","--notebook-dir=/workdir"]
